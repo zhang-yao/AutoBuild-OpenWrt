@@ -10,8 +10,13 @@ name: Build_x86_64
 on: 
   release:
     types: [published]
-
+    
+  # Add a button to trigger the workflow  
+  repository_dispatch:
+  workflow_dispatch:  
+  
   #push:
+  
   #  branches: 
   #    - master
 
